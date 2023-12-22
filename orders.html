@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Order Form</title>
+  <script>
+    function saveOrder() {
+      var fullName = document.getElementById('fullName').value;
+      var email = document.getElementById('email').value;
+      var ticketType = document.getElementById('ticketType').value;
+
+      // Create a data object to send to the server
+      var data = {
+        fullName: fullName,
+        email: email,
+        ticketType: ticketType
+      };
+
+      // Use AJAX to send the data to the server
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '/saveOrder', true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send(JSON.stringify(data));
+
+      // You can add additional logic here for further processing or redirection
+    }
+  </script>
+</head>
+<body>
+  <h1>Ticket Order Form</h1>
+  <form>
+    <!-- ... (form fields) -->
+
+    <button type="button" onclick="saveOrder()">Order Ticket</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Стадіон та квитки</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+ 	
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Квитки та стадіон </a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Головна сторінка</a></li>
+						
+					
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Стадіон</h1>
+							<span class="image fit"><img src="images/stadium.jpg" alt="" class="stadium"/></span>
+							<div> 
+							<h5>Стадіон Джузе́ппе Меа́цца (італ. Stadio Giuseppe Meazza), відоміший як Сан-Сі́ро (італ. San Siro) — футбольний стадіон у Мілані, Італія. Домашня арена двох із трьох найуспішніших італійських клубів: «Мілана» та «Інтернаціонале». Один з найвідоміших футбольних стадіонів у світі. Споруду названо на честь Джузеппе Меацци, футболіста «Інтера» 1930-х—1940-х років, одного з найкращих голеадорів в історії італійського чемпіонату та збірної Італії з футболу. Незважаючи на це, найширшого вжитку отримала історична назва «Сан-Сіро». Стадіон має дуже крутий схил трибун і великий дах, що дозволяє створювати на ньому неповторну атмосферу при заповненні верхніх рядів.</h5>
+								<h1 class="lutyborder2">Біографія стадіона</h1>
+								<p class="lutyborder">Стадіон побудовано у 1925 році в окрузі Сан-Сіро, який дав назву споруді. Ідея побудови належала президенту «Мілана» П'єро Піреллі. Архітектор спланував стадіон виключно для футбольних матчів (на ньому немає легкоатлетичних доріжок). Відкриття стадіону відбулося 19 вересня 1926 року матчем «Інтер»—«Мілан», у якому номінальні господарі перемогли 6:3. На початку стадіон належав лише «Мілану» і був лише його домашньою ареною. У «1947» році «Інтернаціонале» отримало право власності на стадіон і з тих часів Сан-Сіро є ареною для двох команд. Хоча Джузеппе Меацца грав як за «Інтер», так і за «Мілан», але найуспішніші матчі він провів за «Інтернаціонале» і був відданий саме цій команді. Тому фанати «Мілану» називають стадіон виключно його історичною назвою «Сан-Сіро».
+
+Стадіон також використовують для ігор національної збірної. У 1965, 1970 та 2001 році Сан-Сіро приймав фінальні матчі Ліги чемпіонів (або Кубку європейських чемпіонів). Також на стадіоні проводився один з раундів фінального матчу за Кубок УЄФА, коли структура турніру ще була двоматчевою, яку замінили на одну гру у сезоні 1997—98.
+
+У 1989 році стадіон було реконструйовано для проведення матчів чемпіонату світу з футболу 1990 року. Вартість перебудови склала приблизно 60 млн. доларів США, і зараз стадіон має п'ятизірковий статус за оцінкою УЄФА. Було збільшено кількість сидячих місць до 80 018 завдяки трибунам, які збудували на трьох сторонах стадіону. Це викликало побудову 11 бетонних башт на зовнішній частині споруди. Чотири з них розташовані у кутах будівлі та тримають масивний дах, який має відмітні червоні балки.</p>
+							</div>
+						 <h1>Замовлення білету</h1>
+  <form class="kvytki">
+    <label for="fullName">Ваше ПІБ:</label>
+    <input type="text" id="fullName" name="fullName" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="ticketType">Тип сидіння</label>
+    <select id="ticketType" name="ticketType" required>
+      <option value="standard">Стандартний (Ціна 11$) </option>
+      <option value="vip">VIP (Ціна 150$)</option> 
+	  <option value="tribuns">Трибуни (Ціна 19$)</option>
+    </select><br>
+		<label for="ticketType">Матч</label>
+    <select id="ticketType" name="ticketType" required>
+	<option value="inter">Салернітана (22.12.2023)</option>	
+	<option value="inter">Сассуоло (30.12.2023)</option>	
+	<option value="inter">Кальярі (02.01.2024)</option>
+	</select><br>
+    <button type="button" onclick="saveOrder()">Сплатити</button>
+  </form>
+  </div>
+					</section>
+<div class="popup-container" id="popupContainer">
+    <div class="popup-content">
+        <a href="merch.html"><img src="images/1703207279385.png" alt="Advertisement"><br>Купити прямо зараз</a>
+        <button onclick="closePopup()" class="button2">Закрити</button>
+    </div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<li>Всі права захищені моєю невинностю</li><li>Design: <a href="https://instagram.com/rossonerixw">Maksym Rymar</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>document.addEventListener("DOMContentLoaded", function () {
+    
+    setTimeout(function () {
+        document.getElementById("popupContainer").style.display = "block";
+    }, 12000);
+});
+
+function closePopup() {
+    document.getElementById("popupContainer").style.display = "none";
+}
+</script>
+	</body>
+</html>
